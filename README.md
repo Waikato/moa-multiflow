@@ -65,9 +65,14 @@ Open the exported IPYNB file on Jupyter Notebooks and run all codes cell. At tha
 
 ## Displaying the output result in table format
 The result table has long rows, but the CSS style of Jupyter Notebooks is designed to wrap the long rows by default, which makes the table distorted. To come up with that, we need to customise the default CSS file of Jupyter Notebooks by adding a file named [custom.css](https://github.com/truongtd6285/moa-multiflow/blob/master/css/custom.css) following the instruction as bellow:
--	Find your configuration directory by typing following command to the console: jupyter --config-dir (mine is C:\Users\username\.jupyter). 
+-	Find your configuration directory by typing following command to the console: 
+```
+jupyter --config-dir 
+```
+(mine is C:\Users\username\.jupyter). 
 -	Create a new folder (if not existed yet) named custom inside .jupyter\, then copy & paste the file custom.css into that folder (mine is: C:\Users\username \.jupyter\custom\custom.css).
 -	Restart the Jupyter Notebooks, the table will be displayed correctly.
+
 If you are satisfied with ...
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
