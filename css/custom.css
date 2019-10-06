@@ -1,0 +1,18 @@
+pre {
+white-space: pre;  
+		overflow: hidden;
+		word-wrap: normal; 
+}
+
+.output {  
+flex-flow: wrap;  
+overflow: auto; 
+}
+
+div.output_subarea {
+padding: 0;
+}
+
+div.output_area pre{
+padding-right: 10px;
+}
