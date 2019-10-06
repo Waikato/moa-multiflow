@@ -41,8 +41,34 @@ Refresh the Jupyter Notebooks again, it will work properly:
 ![Image](https://github.com/truongtd6285/moa-multiflow/blob/master/images/jp-kernel-success.png)
 
 ## Exporting tasks from MOA GUI to a IPYNB files
+At that moment, there are 6 tasks that can be exported to Jupyter Notebooks files:
+- EvaluateInterleavedTestThenTrain
+- EvaluatePrequential
+- EvaluatePrequentialCV
+- EvaluatePrequentialDelayed
+- EvaluatePrequentialDelayedCV
+- EvaluatePrequentialRegression
 
-From MOA, under tab “Other Tasks” select WriteConfigurationToJupyterNotebook
+From MOA, under tab “Other Tasks” select WriteConfigurationToJupyterNotebook:
+![Image](https://github.com/truongtd6285/moa-multiflow/blob/master/images/moa-jb-home.png)
+
+Select “Configure” to open “Configure task”. In the field “NotebookFile”, locate the place where you want to save the exported file and input its name.
+![Image](https://github.com/truongtd6285/moa-multiflow/blob/master/images/moa-jb-savefile.png)
+
+You can click “Edit” button and configure the task with desired parameters
+![Image](https://github.com/truongtd6285/moa-multiflow/blob/master/images/moa-jb-edittasks.png)
+
+You can export IPYNB files with or without running the tasks by tick or untick the runConfig option corresponding. By default, MOA exports the files without running the task.
+![Image](https://github.com/truongtd6285/moa-multiflow/blob/master/images/moa-jb-runconfig.png)
+
+Open the exported IPYNB file on Jupyter Notebooks and run all codes cell. At that step, you have successfully export a task from MOA GUI and run it on Jupyter Notebooks. Example of the running results can be found [here].
+
+## Displaying the output result in table format
+The result table has long rows, but the CSS style of Jupyter Notebooks is designed to wrap the long rows by default, which makes the table distorted. To come up with that, we need to customise the default CSS file of Jupyter Notebooks by adding a file named [custom.css](https://github.com/truongtd6285/moa-multiflow/blob/master/css/custom.css) following the instruction as bellow:
+-	Find your configuration directory by typing following command to the console: jupyter --config-dir (mine is C:\Users\username\.jupyter). 
+-	Create a new folder (if not existed yet) named custom inside .jupyter\, then copy & paste the file custom.css into that folder (mine is: C:\Users\username \.jupyter\custom\custom.css).
+-	Restart the Jupyter Notebooks, the table will be displayed correctly.
+If you are satisfied with ...
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
