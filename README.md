@@ -1,10 +1,13 @@
-## Welcome to GitHub Pages
+## Welcome to moa-multiflow’s documentation!
 
-You can use the [editor on GitHub](https://github.com/truongtd6285/moa-multiflow/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This tutorial will show you how to export Jupyter Notebooks from MOA as well as how to configure the Jupyter Notebooks for running the exported tasks. We expect that you have already Python and Jupyter Notebooks installed on your machine. If
+not, please install them before reading further more. This tutorial describes the configuration process on a Windows 10 computer, but it is possibly applied as well for other operating systems without much modifications.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Jupyter Notebooks nowadays can run the code written in various programming languages by connecting to the corresponding kernels. MOA use Java language, so that we need to install a Jupyter kernel for Java called IJava. You can download and
+install the latest version of IJava from a Github repository [here](https://github.com/SpencerPark/IJava).
 
-### Markdown
+## Export tasks from MOA
+
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
