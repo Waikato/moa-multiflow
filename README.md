@@ -16,7 +16,7 @@ set PATH=%PATH%;"<absolute path to Java>\bin"
 - If you cannot start Jupyter Note book, check if python scripts folder was added
 to the PATH. In Windows, you can manually add it to the PATH by command:
 ```
-<set PATH=%PATH%;"<absolute path to Python>\Scripts>"
+set PATH=%PATH%;"<absolute path to Python>\Scripts"
 ```
 ### Setting up IJava for Jupyter Notebooks
 Open the Windows console and type jupyter notebook to start it. The Jupyter Notebooks will be opened on the web browser:
