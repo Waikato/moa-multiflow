@@ -46,11 +46,28 @@ Refresh the Jupyter Notebooks again, it will work properly:
 ## Exporting tasks from MOA GUI to a IPYNB files
 At that moment, there are 6 tasks that can be exported to Jupyter Notebooks files:
 - EvaluateInterleavedTestThenTrain
+  * Test configuration: 
+` WriteConfigurationToJupyterNotebook -t (EvaluateInterleavedTestThenTrain -l (meta.AdaptiveRandomForest -l (ARFHoeffdingTree -e 2000000 -g 75 -s GiniSplitCriterion -c 0.01 -l MC) -o (Percentage (M * (m / 100))) -m 80) -s (ArffFileStream -f <path>\elecNormNew.arff) -i 100000 -f 4532) -j <path>\outputfile.ipynb `
+  
 - EvaluatePrequential
+  * Test configuration: 
+` WriteConfigurationToJupyterNotebook -t (EvaluatePrequential -l (meta.AdaptiveRandomForest -l (ARFHoeffdingTree -e 2000000 -g 75 -s GiniSplitCriterion -c 0.01 -l MC) -o (Percentage (M * (m / 100))) -m 80) -s (ArffFileStream -f <path>\elecNormNew.arff) -i 100000 -f 4532) -j <path>\outputfile.ipynb `
+  
 - EvaluatePrequentialCV
+  * Test configuration: 
+` WriteConfigurationToJupyterNotebook -t (EvaluatePrequentialCV -l (meta.AdaptiveRandomForest -l (ARFHoeffdingTree -e 2000000 -g 75 -s GiniSplitCriterion -c 0.01 -l MC) -o (Percentage (M * (m / 100))) -m 80) -s (ArffFileStream -f <path>\elecNormNew.arff) -i 100000 -f 4532) -j <path>t\outputfile.ipynb `
+  
 - EvaluatePrequentialDelayed
+  * Test configuration: 
+` WriteConfigurationToJupyterNotebook -t (EvaluatePrequentialDelayed -l (meta.AdaptiveRandomForest -l (ARFHoeffdingTree -e 2000000 -g 75 -s GiniSplitCriterion -c 0.01 -l MC) -o (Percentage (M * (m / 100))) -m 80) -s (ArffFileStream -f <path>\elecNormNew.arff) -i 100000 -f 4532) -j <path>\outputfile.ipynb `
+  
 - EvaluatePrequentialDelayedCV
+  * Test configuration: 
+` WriteConfigurationToJupyterNotebook -t (EvaluatePrequentialDelayedCV -l (meta.AdaptiveRandomForest -l (ARFHoeffdingTree -e 2000000 -g 75 -s GiniSplitCriterion -c 0.01 -l MC) -o (Percentage (M * (m / 100))) -m 80) -s (ArffFileStream -f <path>\elecNormNew.arff) -i 100000 -f 4532) -j <path>\outputfile.ipynb `
+
 - EvaluatePrequentialRegression
+  * Test configuration: 
+` WriteConfigurationToJupyterNotebook -t (EvaluatePrequentialRegression -l (meta.AdaptiveRandomForestRegressor -l (ARFFIMTDD -s GiniSplitCriterion -g 75 -l 0.01) -o (Percentage (M * (m / 100))) -m 80) -e BasicRegressionPerformanceEvaluator -i 100000 -f 4532) -j <path>\outputfile.ipynb -e `
 
 From MOA, under tab “Other Tasks” select WriteConfigurationToJupyterNotebook:
 ![Image](/images/moa-jb-home.png)
