@@ -2,7 +2,10 @@
 
 This tutorial will show you how to export Jupyter Notebooks from MOA as well as how to configure the Jupyter Notebooks for running the exported tasks. We expect that you have already Python and Jupyter Notebooks installed on your machine. If not, please install them before reading further more. This tutorial describes the configuration process on a Windows 10 computer, but it is possibly applied as well for other operating systems without much modifications.
 
-Jupyter Notebooks nowadays can run the code written in various programming languages by connecting to the corresponding kernels. MOA use Java language, so that we need to install a Jupyter kernel for Java called IJava. You can download and install the latest version of IJava from a [Github repository](https://github.com/SpencerPark/IJava).
+Jupyter Notebooks nowadays can run the code written in various programming languages by connecting to the corresponding kernels. MOA use Java language, so that we need to install a Jupyter kernel for Java called IJava. You can download and install the latest version of IJava from [IJava Github repository](https://github.com/SpencerPark/IJava).
+
+## moa-flow API
+You can find documentation for moa-flow API [here](https://github.com/Waikato/moa-flow/blob/master/RELEASE.md)
 
 ## Getting started
 To avoid getting in troubles with the whole installation process, please note some
