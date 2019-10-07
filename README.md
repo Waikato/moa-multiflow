@@ -20,7 +20,7 @@ set PATH=%PATH%;"<absolute path to Python>\Scripts"
 ```
 ### Setting up IJava for Jupyter Notebooks
 Open the Windows console and type jupyter notebook to start it. The Jupyter Notebooks will be opened on the web browser:
-![Image](https://github.com/truongtd6285/moa-multiflow/blob/master/images/jb-homepage.png)
+![Image](/images/jb-homepage.png)
 
 Click new and choose Java:
 ![Image](https://github.com/truongtd6285/moa-multiflow/blob/master/images/jp-kernel.PNG)
