@@ -95,8 +95,8 @@ The result table has long rows, but the CSS style of Jupyter Notebooks is design
 ```
 jupyter --config-dir 
 ```
-(mine is C:\Users\username\.jupyter). 
--	Create a new folder (if not existed yet) named custom inside .jupyter\, then copy & paste the file custom.css into that folder (mine is: C:\Users\username \.jupyter\custom\custom.css).
+(mine is 'C:\Users\username\\.jupyter'). 
+-	Create a new folder (if not existed yet) named custom inside .jupyter\, then copy & paste the file custom.css into that folder (mine is: 'C:\Users\username\\.jupyter\custom\custom.css').
 -	Restart the Jupyter Notebooks, the table will be displayed correctly.
 
 ### Examples
