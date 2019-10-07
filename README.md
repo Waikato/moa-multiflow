@@ -53,13 +53,13 @@ From MOA, under tab “Other Tasks” select WriteConfigurationToJupyterNotebook
 ![Image](/images/moa-jb-home.png)
 
 Select “Configure” to open “Configure task”. In the field “NotebookFile”, locate the place where you want to save the exported file and input its name.
-![Image](/images/moa-jb-savefile.png)
+![Image](/images/moa-jb-savefile.PNG)
 
 You can click “Edit” button and configure the task with desired parameters
-![Image](/images/moa-jb-edittasks.png)
+![Image](/images/moa-jb-edittasks.PNG)
 
 You can export IPYNB files with or without running the tasks by tick or untick the runConfig option corresponding. By default, MOA exports the files without running the task.
-![Image](/images/moa-jb-runconfig.png)
+![Image](/images/moa-jb-runconfig.PNG)
 
 Open the exported IPYNB file on Jupyter Notebooks and run all codes cell. At that step, you have successfully export a task from MOA GUI and run it on Jupyter Notebooks. Example of the running results can be found [here].
 
