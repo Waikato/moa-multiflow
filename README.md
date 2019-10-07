@@ -23,22 +23,22 @@ Open the Windows console and type jupyter notebook to start it. The Jupyter Note
 ![Image](/images/jb-homepage.png)
 
 Click new and choose Java:
-![Image](https://github.com/truongtd6285/moa-multiflow/blob/master/images/jp-kernel.PNG)
+![Image](/images/jp-kernel.PNG)
 
 We will get Kernel error as the correct path for the IJava kernel was not we configured:
-![Image](https://github.com/truongtd6285/moa-multiflow/blob/master/images/jp-kernelerror.png)
+![Image](/images/jp-kernelerror.png)
 
 To see available kernels for Jupyter Notebooks, run jupyter kernelspec list from the Windows console:
-![Image](https://github.com/truongtd6285/moa-multiflow/blob/master/images/jp-kernellist.png)
+![Image](/images/jp-kernellist.png)
 
 We edit the configuration file for Java kernel in the folder C:\ProgramData\jupyter\kernels\java:
-![Image](https://github.com/truongtd6285/moa-multiflow/blob/master/images/jp-kernelfolder.png)
+![Image](/images/jp-kernelfolder.png)
 
 Open it by any text editor and change “java” to the absolute path to where Java is currently installed on your computer, do not forget to change “\” in the path to “/” or “\\” which is the path format used by JSON.
-![Image](https://github.com/truongtd6285/moa-multiflow/blob/master/images/jp-javakernel-config.PNG)
+![Image](/images/jp-javakernel-config.PNG)
 
 Refresh the Jupyter Notebooks again, it will work properly:
-![Image](https://github.com/truongtd6285/moa-multiflow/blob/master/images/jp-kernel-success.png)
+![Image](/images/jp-kernel-success.png)
 
 ## Exporting tasks from MOA GUI to a IPYNB files
 At that moment, there are 6 tasks that can be exported to Jupyter Notebooks files:
@@ -50,21 +50,21 @@ At that moment, there are 6 tasks that can be exported to Jupyter Notebooks file
 - EvaluatePrequentialRegression
 
 From MOA, under tab “Other Tasks” select WriteConfigurationToJupyterNotebook:
-![Image](https://github.com/truongtd6285/moa-multiflow/blob/master/images/moa-jb-home.png)
+![Image](/images/moa-jb-home.png)
 
 Select “Configure” to open “Configure task”. In the field “NotebookFile”, locate the place where you want to save the exported file and input its name.
-![Image](https://github.com/truongtd6285/moa-multiflow/blob/master/images/moa-jb-savefile.png)
+![Image](/images/moa-jb-savefile.png)
 
 You can click “Edit” button and configure the task with desired parameters
-![Image](https://github.com/truongtd6285/moa-multiflow/blob/master/images/moa-jb-edittasks.png)
+![Image](/images/moa-jb-edittasks.png)
 
 You can export IPYNB files with or without running the tasks by tick or untick the runConfig option corresponding. By default, MOA exports the files without running the task.
-![Image](https://github.com/truongtd6285/moa-multiflow/blob/master/images/moa-jb-runconfig.png)
+![Image](/images/moa-jb-runconfig.png)
 
 Open the exported IPYNB file on Jupyter Notebooks and run all codes cell. At that step, you have successfully export a task from MOA GUI and run it on Jupyter Notebooks. Example of the running results can be found [here].
 
 ## Displaying the output result in table format
-The result table has long rows, but the CSS style of Jupyter Notebooks is designed to wrap the long rows by default, which makes the table distorted. To come up with that, we need to customise the default CSS file of Jupyter Notebooks by adding a file named [custom.css](https://github.com/truongtd6285/moa-multiflow/blob/master/css/custom.css) following the instruction as bellow:
+The result table has long rows, but the CSS style of Jupyter Notebooks is designed to wrap the long rows by default, which makes the table distorted. To come up with that, we need to customise the default CSS file of Jupyter Notebooks by adding a file named [custom.css](/css/custom.css) following the instruction as bellow:
 -	Find your configuration directory by typing following command to the console: 
 ```
 jupyter --config-dir 
