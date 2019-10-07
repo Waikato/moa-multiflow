@@ -76,26 +76,5 @@ jupyter --config-dir
 -	Create a new folder (if not existed yet) named custom inside .jupyter\, then copy & paste the file custom.css into that folder (mine is: C:\Users\username \.jupyter\custom\custom.css).
 -	Restart the Jupyter Notebooks, the table will be displayed correctly.
 
-If you are satisfied with ...
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Examples
+[Here](/examples/example.ipynb) you can find examples for a task running on Jupyter Notebook with moa-flow API.
