@@ -2,6 +2,7 @@
 
 The idea of this project is creating a more flexible tool for testing, learning machine learning algorithms by combining the strength of [MOA](https://moa.cms.waikato.ac.nz/blog/) via [moa-flow API](https://github.com/Waikato/moa-flow/blob/master/README.md) with the dynamic and interactive abilities of script languages. You can export a IPYNB file for a task from MOA, then run it interactively on a web-browser with Jupyter Notebook. Jupyter Notebooks nowadays can run the code written in various programming languages by connecting to the corresponding kernels. MOA use Java language, so that we will use a Jupyter kernel for Java called [IJava](https://github.com/SpencerPark/IJava).
 
+![Image](/images/moa-jb-demo.PNG)
 ![Image](/images/moa-jb-demo1.PNG)
 ![Image](/images/moa-jb-demo2.PNG)
 
