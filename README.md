@@ -1,5 +1,6 @@
 # Welcome to moa-multiflow’s documentation!
 
+## Introduction
 The idea of this project is creating a more flexible tool for testing, learning machine learning algorithms by combining the strength of [MOA](https://moa.cms.waikato.ac.nz/blog/) via [moa-flow API](https://github.com/Waikato/moa-flow/blob/master/README.md) with the dynamic and interactive abilities of script languages. You can export a IPYNB file for a task from MOA, then run it interactively on a web-browser with Jupyter Notebook. Jupyter Notebooks nowadays can run the code written in various programming languages by connecting to the corresponding kernels. MOA use Java language, so that we will use a Jupyter kernel for Java called [IJava](https://github.com/SpencerPark/IJava).
 
 ![Image](/images/moa-jb-demo.PNG)
@@ -12,7 +13,18 @@ This tutorial will show you how to export Jupyter Notebooks from MOA as well as 
 With moa-flow API, you can simlify your work with MOA by using a predesigned workflow API. You can find documentation for moa-flow API [here](https://github.com/Waikato/moa-flow/blob/master/README.md)
 
 ## MOA Notebook
-### Getting started
+### Try it online with Binder
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/truongtd6285/moaflow-binder/master)
+Click the Binder icon to start the Binder service to play around with the MOA Notebook.
+
+### Docker image
+If you have Docker installed on your local machine, please run the command bellow to pull the MOA Notebook image from Docker Hub:
+```
+docker pull truongtd6285/moanotebook
+```
+
+### Set it up offline
+#### Getting started
 You can download and install the latest version of IJava from [IJava Github repository](https://github.com/SpencerPark/IJava).
 
 To avoid getting in troubles with the whole installation process, please note some
@@ -28,7 +40,7 @@ to the PATH. In Windows, you can manually add it to the PATH by command:
 ```
 set PATH=%PATH%;"<absolute path to Python>\Scripts"
 ```
-### Setting up IJava for Jupyter Notebooks
+#### Setting up IJava for Jupyter Notebooks
 Open the Windows console and type jupyter notebook to start it. The Jupyter Notebooks will be opened on the web browser:
 ![Image](/images/jb-homepage.png)
 
@@ -50,7 +62,7 @@ Open it by any text editor and change “java” to the absolute path to where J
 Refresh the Jupyter Notebooks again, it will work properly:
 ![Image](/images/jp-kernel-success.png)
 
-### Exporting tasks from MOA GUI to a IPYNB files
+#### Exporting tasks from MOA GUI to a IPYNB files
 At that moment, there are 6 tasks that can be exported to Jupyter Notebooks files:
 - EvaluateInterleavedTestThenTrain
   * Test configuration: 
@@ -90,7 +102,7 @@ You can export IPYNB files with or without running the tasks by tick or untick t
 
 Open the exported IPYNB file on Jupyter Notebooks and run all codes cell. At that step, you have successfully export a task from MOA GUI and run it on Jupyter Notebooks. Example of the running results can be found [here].
 
-### Displaying the output result in table format
+#### Displaying the output result in table format
 The result table has long rows, but the CSS style of Jupyter Notebooks is designed to wrap the long rows by default, which makes the table distorted. To come up with that, we need to customise the default CSS file of Jupyter Notebooks by adding a file named [custom.css](/css/custom.css) following the instruction as bellow:
 -	Find your configuration directory by typing following command to the console: 
 ```
@@ -99,6 +111,3 @@ jupyter --config-dir
 (mine is C:\Users\username\\.jupyter). 
 -	Create a new folder (if not existed yet) named custom inside .jupyter\, then copy & paste the file custom.css into that folder (mine is: C:\Users\username\\.jupyter\custom\custom.css).
 -	Restart the Jupyter Notebooks, the table will be displayed correctly.
-
-### Examples
-[Here](/examples/example.ipynb) you can find examples for a task running on Jupyter Notebook with moa-flow API.
