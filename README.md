@@ -9,8 +9,10 @@ The idea of this project is creating a more flexible tool for testing, learning 
 
 This tutorial will show you how to export Jupyter Notebooks from MOA as well as how to configure the Jupyter Notebooks for running the exported tasks. We expect that you have already Python and Jupyter Notebooks installed on your machine. If not, please install them before reading further more. This tutorial describes the configuration process on a Windows 10 computer, but it is possibly applied as well for other operating systems without much modifications. 
 
+
 ## moa-flow API
 With moa-flow API, you can simlify your work with MOA by using a predesigned workflow API. You can find documentation for moa-flow API [here](https://github.com/Waikato/moa-flow/blob/master/README.md)
+
 
 ## MOA Notebook
 ### Try it online with Binder
